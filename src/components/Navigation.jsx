@@ -31,6 +31,13 @@ export default function Navigation() {
         width: "100%"
       }
 
+      const footerStyle = {
+          position: "fixed", 
+          bottom: "0", 
+          textAlign: "center", 
+          width: navStyle.width
+        }
+
     return (
         <div className="navigation" style={navStyle}>
             <h1 id="title">VR Tutorial</h1>
@@ -48,7 +55,7 @@ export default function Navigation() {
                     </li>
                 </ul>
             </nav>
-            <div id="footer" style={{position: "absolute", bottom: "0", textAlign: "center"}}>
+            <div id="footer" style={footerStyle}>
             <footer>
                 <p>Darius Turner ©2020</p>
             </footer>
